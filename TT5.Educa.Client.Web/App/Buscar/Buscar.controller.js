@@ -7,5 +7,5 @@ function BuscarController($scope, $location, $window) {
     $scope.Criteria = function () {
         var texto = $scope.text.replace(' ', '+');
         $window.location.href = '#/Resultado?query=' + texto;
-    }
+    };
 }

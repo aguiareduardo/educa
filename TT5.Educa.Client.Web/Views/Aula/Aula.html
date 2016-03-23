@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <h3>{{titulo}}</h3>
+        <h4>{{subtitulo}}</h4>
+    </div>
+    <div class="row">
+        <button class="btn btn-primary" ng-click="Incluir()">Incluir Bloco</button>
+        <div ng-repeat="item in Itens">
+            <div ng-show="item.tipo == 'video'">
+                <div>{{item.sequencia}}</div>
+                <div id="snapshot">
+                    
+                </div>
+                <div>
+                    {{item.descricao}}
+                </div>
+                <div>{{item.duracao}}</div>
+            </div>
+            <div ng-show="item.tipo == 'artigo'">
+                
+            </div>
+            <div ng-show="item.tipo == 'exercicio'">
+
+            </div>
+        </div>
+
+    </div>
+</div>
