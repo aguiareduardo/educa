@@ -1,16 +1,14 @@
 ﻿angular.module('app')
-    .controller('ResultadoController', ['$scope', '$location', '$http', ResultadoController]);
+    .controller('ResultadoController', ['$scope', '$routeParams', '$http', ResultadoController]);
 
-function ResultadoController($scope, $location, $http) {
+function ResultadoController($scope, $routeParams, $http) {
     $scope.list = [];
 
-    console.log($location.search().query);
-
-    if ($location.search().query) {
-        var query = $location.search().query;
-
-        $http.get('App/Resultado/Resultado.mock.js').then(function (result) {
-                $scope.list = result.data;
-        });
-    }
+	var query = $routeParams.query;
+    
+     if (query) {        
+         $http.get('App/Resultado/resultado.mock.js').then(function (result) {
+                 $scope.list = result.data;
+         });
+     }
 }

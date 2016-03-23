@@ -3,6 +3,10 @@
 .config(['$routeProvider',
   function ($routeProvider) {
       $routeProvider.
+        when('/Index.html', {
+            templateUrl: 'Views/Home.html',
+            controller: 'HomeController'
+        }).
         when('/', {
             templateUrl: 'Views/Home.html',
             controller: 'HomeController'
@@ -11,7 +15,7 @@
             templateUrl: 'Views/Home.html',
             controller: 'HomeController'
         }).
-        when('/resultado', {
+        when('/resultado/:query', {
             templateUrl: 'Views/Resultado.html',
             controller: 'ResultadoController'
         }).
@@ -24,11 +28,11 @@
             controller: 'PlanoEditController'
         }).
         when('/aulas', {
-            templateUrl: 'Views/aula/MyClasses.html',
+            templateUrl: 'Views/aula/Aulas.html',
             controller: 'AulaController'
         }).
         when('/aula/:id', {
-            templateUrl: 'Views/aula/Class.html',
+            templateUrl: 'Views/aula/Aula.html',
             controller: 'AulaController'
         }).
         otherwise({
@@ -36,8 +40,7 @@
         });
   }])
 .run(['$rootScope', '$location', function ($rootScope, $location) {
-    $rootScope.$on('$routeChangeStart', function(next, current) { 
-        console.log($location.path());
+    $rootScope.$on('$routeChangeStart', function(next, current) {         
     });
 }])
 

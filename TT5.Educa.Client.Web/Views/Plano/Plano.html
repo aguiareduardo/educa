@@ -1,0 +1,49 @@
+﻿<div class="container" ng-init="buscar()">
+    <div class="row">
+        <div class="col-lg-10 col-md-10 col-sm-10" id="Capa">
+
+        </div>
+        <div id="Foto">
+
+        </div>
+    </div>
+    <div class="row">
+        <h3>
+            {{Data.titulo}}
+        </h3>
+        <h4>
+            {{Data.subtitulo}}
+        </h4>
+        <h5>
+            {{Data.descricao}}
+        </h5>
+    </div>
+    <div class="row">
+        <label>
+            Assuntos
+        </label>        
+    </div>
+    <div class="row">
+        <div>
+            <h6>Aulas</h6>
+        </div>
+        <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="width:70%">Título</th>
+                        <th style="width:20%">Ultima Atualização</th>
+                        <th style="width:10%"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in Data.aulas">
+                        <td>{{item.titulo}}</td>
+                        <td>{{item.dataUltimaAtualizacao}}</td>
+                        <td><a ng-href="#/Aula/{{item.id}}">Editar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

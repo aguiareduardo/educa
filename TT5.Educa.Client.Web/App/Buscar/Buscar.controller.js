@@ -1,11 +1,11 @@
 ﻿angular.module('app')
     .controller('BuscarController', ['$scope', '$location', '$window', BuscarController]);
 
-function BuscarController($scope, $location, $window) {
-    $scope.text = '';
+function BuscarController($scope, $location) {
+    $scope.criteria = '';
 
-    $scope.Criteria = function () {
-        var texto = $scope.text.replace(' ', '+');
-        $window.location.href = '#/Resultado?query=' + texto;
+    $scope.Search = function () {
+        var texto = $scope.criteria.replace(' ', '+');
+        $location.path('/resultado/' + texto);
     };
 }

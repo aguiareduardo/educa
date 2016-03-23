@@ -1,0 +1,31 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-10 col-md-10 col-sm-10" id="Capa">
+
+        </div>
+        <div id="Foto">
+
+        </div>
+    </div>
+    <h3>
+        Meus Planos
+    </h3>    
+    <div class="row">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th style="width:70%">Título</th>
+                    <th style="width:20%">Ultima Atualização</th>
+                    <th style="width:10%"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in List">
+                    <td>{{item.titulo}}</td>
+                    <td>{{item.dataUltimaAtualizacao}}</td>
+                    <td ><a ng-href="#/plano/{{item.id}}">Editar</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

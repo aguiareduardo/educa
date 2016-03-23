@@ -67,9 +67,9 @@
   <ItemGroup>
     <Content Include="App\App.js" />
     <Content Include="App\Aula\aula.mock.js" />
-    <Content Include="App\Aula\ClassEdit.controller.js" />
-    <Content Include="App\Aula\ClassView.controller.js" />
-    <Content Include="App\Aula\MyClasses.controller.js" />
+    <Content Include="App\Aula\AulaEdit.controller.js" />
+    <Content Include="App\Aula\Aulas.controller.js" />
+    <Content Include="App\Aula\AulaView.controller.js" />
     <Content Include="App\Buscar\Buscar.controller.js" />
     <Content Include="App\Plano\PlanEdit.controller.js" />
     <Content Include="App\Plano\plano.js" />
@@ -78,7 +78,7 @@
     <Content Include="App\Plano\PlanView.controller.js" />
     <Content Include="App\Resultado\Resultado.controller.js" />
     <Content Include="App\Resultado\resultado.mock.js" />
-    <Content Include="App\Video\VideoPreview.html" />
+    <Content Include="Views\Aula\VideoPreview.html" />
     <Content Include="Content\app.min.1.css" />
     <Content Include="Content\app.min.2.css" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -895,11 +895,11 @@
     <Content Include="Views\Home.html" />
     <Content Include="Views\Login.html" />
     <Content Include="Views\Partials\SearchBar.html" />
-    <Content Include="Views\Plano\MyPlans.html" />
-    <Content Include="Views\Plano\Plan.html" />
+    <Content Include="Views\Plano\Plano.html" />
+    <Content Include="Views\Plano\Planos.html" />
     <Content Include="Views\Resultado.html" />
-    <Content Include="Views\Turma\MinhasTurmas.html" />
     <Content Include="Views\Turma\Turma.html" />
+    <Content Include="Views\Turma\Turmas.html" />
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-1.9.0.min.map" />
     <Content Include="Scripts\version.json" />
@@ -911,6 +911,7 @@
     <Folder Include="App\Teste\" />
     <Folder Include="App\Turma\" />
     <Folder Include="App\Usuario\" />
+    <Folder Include="App\Video\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

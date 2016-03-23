@@ -1,21 +1,16 @@
 ﻿<div id="container">
+    <h2>Resultado da Busca:</h2>
     <div id="formulario">
         <div id="headerFormulario"></div>
         <div id="conteudoFormulario">
-            <table>
+            <table class="table table-striped">
                 <tbody>
-                    <tr ng-repeat="item in list">
+                     <tr ng-repeat="item in list">
                         <td id="imagem"></td>
-                        <td>
-                            <div>
-                                <h5>{{item.Titulo}}</h5>
-                                <h6>{{item.Usuario}}</h6>
-                                <p>{{item.UltimaAtualizacao}}</p>
-                                <p>{{item.QuantAulas}} - {{item.QuantArtigos}} - {{item.QuantVideos}}</p>
-                                <p>{{item.DescicaoResumida}}</p>
-                                <span>Professor</span>
-                            </div>
-                        </td>
+                        <td>{{item.Titulo}}</td>
+                        <td>{{item.Usuario}}</td>
+                        <td>{{item.UltimaAtualizacao}}</td>
+                        <td>{{item.DescicaoResumida}}</td>
                     </tr>
                 </tbody>
             </table>
