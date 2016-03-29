@@ -71,11 +71,11 @@
     <Content Include="App\Aula\Aulas.controller.js" />
     <Content Include="App\Aula\AulaView.controller.js" />
     <Content Include="App\Buscar\Buscar.controller.js" />
-    <Content Include="App\Plano\PlanEdit.controller.js" />
     <Content Include="App\Plano\plano.js" />
+    <Content Include="App\Plano\PlanoEdit.controller.js" />
+    <Content Include="App\Plano\Planos.controller.js" />
     <Content Include="App\Plano\planos.js" />
-    <Content Include="App\Plano\Plans.controller.js" />
-    <Content Include="App\Plano\PlanView.controller.js" />
+    <Content Include="App\Plano\PlanoView.controller.js" />
     <Content Include="App\Resultado\Resultado.controller.js" />
     <Content Include="App\Resultado\resultado.mock.js" />
     <Content Include="Views\Aula\VideoPreview.html" />
@@ -892,12 +892,12 @@
     <Content Include="Scripts\sweet-alert.min.js" />
     <Content Include="Scripts\waves.min.js" />
     <Content Include="Views\Aula\Aula.html" />
-    <Content Include="Views\Home.html" />
-    <Content Include="Views\Login.html" />
+    <Content Include="Views\Home\Home.html" />
+    <Content Include="Views\Login\Login.html" />
     <Content Include="Views\Partials\SearchBar.html" />
     <Content Include="Views\Plano\Plano.html" />
     <Content Include="Views\Plano\Planos.html" />
-    <Content Include="Views\Resultado.html" />
+    <Content Include="Views\Resultado\Resultado.html" />
     <Content Include="Views\Turma\Turma.html" />
     <Content Include="Views\Turma\Turmas.html" />
     <Content Include="Web.config" />
@@ -908,6 +908,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App\Artigo\" />
+    <Folder Include="App\Avaliacao\" />
+    <Folder Include="App\Bookmark\" />
+    <Folder Include="App\Canal\" />
+    <Folder Include="App\EstudarDepois\" />
+    <Folder Include="App\Exercicio\" />
+    <Folder Include="App\Roteiro\" />
     <Folder Include="App\Teste\" />
     <Folder Include="App\Turma\" />
     <Folder Include="App\Usuario\" />

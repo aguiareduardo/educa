@@ -4,36 +4,44 @@
   function ($routeProvider) {
       $routeProvider.
         when('/Index.html', {
-            templateUrl: 'Views/Home.html',
+            templateUrl: 'Views/Home/Home.html',
             controller: 'HomeController'
         }).
         when('/', {
-            templateUrl: 'Views/Home.html',
+            templateUrl: 'Views/Home/Home.html',
             controller: 'HomeController'
         }).
         when('/home', {
-            templateUrl: 'Views/Home.html',
+            templateUrl: 'Views/Home/Home.html',
             controller: 'HomeController'
         }).
         when('/resultado/:query', {
-            templateUrl: 'Views/Resultado.html',
+            templateUrl: 'Views/Resultado/Resultado.html',
             controller: 'ResultadoController'
         }).
         when('/planos', {
             templateUrl: 'Views/Plano/Planos.html',
-            controller: 'PlansController'
+            controller: 'PlanosController'
         }).
         when('/plano/:id', {
             templateUrl: 'Views/Plano/Plano.html',
+            controller: 'PlanoViewController'
+        }).
+        when('/planoEdit/:id', {
+            templateUrl: 'Views/Plano/PlanoEdit.html',
             controller: 'PlanoEditController'
         }).
         when('/aulas', {
-            templateUrl: 'Views/aula/Aulas.html',
-            controller: 'AulaController'
+            templateUrl: 'Views/Aula/Aulas.html',
+            controller: 'AulasController'
         }).
         when('/aula/:id', {
-            templateUrl: 'Views/aula/Aula.html',
-            controller: 'AulaController'
+            templateUrl: 'Views/Aula/Aula.html',
+            controller: 'AulaViewController'
+        }).
+        when('/aula/:id', {
+            templateUrl: 'Views/Aula/AulaEdit.html',
+            controller: 'AulaEditController'
         }).
         otherwise({
             redirectTo: '/FileNotFound'

@@ -1,5 +1,5 @@
 angular.module('app')
-    .controller('PlansController', ['$scope', '$http', PlanoController]);
+    .controller('PlanosController', ['$scope', '$http', PlanoController]);
 
 function PlanoController($scope, $http) {
     $scope.List = [];
