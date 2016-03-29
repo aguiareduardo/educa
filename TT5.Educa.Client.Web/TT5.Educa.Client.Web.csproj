@@ -78,6 +78,8 @@
     <Content Include="App\Plano\PlanoView.controller.js" />
     <Content Include="App\Resultado\Resultado.controller.js" />
     <Content Include="App\Resultado\resultado.mock.js" />
+    <Content Include="Scripts\angular-ui-router.js" />
+    <Content Include="Scripts\angular-ui-router.min.js" />
     <Content Include="Views\Aula\VideoPreview.html" />
     <Content Include="Content\app.min.1.css" />
     <Content Include="Content\app.min.2.css" />
